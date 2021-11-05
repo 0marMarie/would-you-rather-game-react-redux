@@ -26,11 +26,12 @@ const Question = (props) => {
 }
 
 const mapStateToProps = ({ users, authedUser }, props) => {
-  const { questions_id } = props.match.params
   // if there is no authednticated user redicrect to login page
   if (!authedUser)
     return (<Redirect to={'/login'} />)
+  
   // the question id to the answered poll 
+  const { questions_id } = props.match.params
   let pollAnswered = Object.keys(users[authedUser].answers)
     .includes(questions_id)
 
