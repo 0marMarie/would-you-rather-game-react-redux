@@ -19,8 +19,10 @@ const Question = (props) => {
   return (
     <div>
       {/* if the user answered the question ? view the result component */}
-      { pollAnswered && (<Result id={questions_id} />)}
-      {!pollAnswered && (<Poll id={questions_id} />)}
+      { pollAnswered 
+        && (<Result id={questions_id} />)}
+      {!pollAnswered 
+        && (<Poll id={questions_id} />)}
     </div>
   )
 }
