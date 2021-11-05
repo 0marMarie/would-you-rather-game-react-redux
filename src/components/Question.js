@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom'
 import Result from './Result'
 import Poll from './Poll'
 
+// This question separation solution has been inspired via google search #
 const Question = (props) => {
   const { pollAnswered, questions_id, location } = props
 
@@ -28,7 +29,7 @@ const Question = (props) => {
 }
 
 const mapStateToProps = ({ users, authedUser }, props) => {
-  // if there is no authednticated user redicrect to login page
+  // if there is no authednticated user redicrect to login page 
   if (!authedUser)
     return (<Redirect to={'/login'} />)
   
