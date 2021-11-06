@@ -7,7 +7,15 @@ const Poll = (props) => {
 
   const { users, id, questions, authedUser, dispatch, location } = props
   const [poll, setPoll] = useState('')
-  const name = users[questions[id].author].name
+
+  // if the questions id doesn't exist in users questions --FIX
+  if (!questions[id])
+    return (<Redirect to={{
+      pathname: '/error',
+      state: location,
+    }} />)
+
+  const name = users[questions[id].author].name 
   const avatar = users[questions[id].author].avatarURL
 
   // Trigger the user answer selection
@@ -25,13 +33,6 @@ const Poll = (props) => {
       answer: poll
     }))
   }
-
-  // if the id does not exist, handle the err
-  if (!id)
-    return (<Redirect to={{
-      pathname: '/error',
-      state: location,
-    }} />)
 
   return (
     <div className="container w-50 border mt-5 p-3">

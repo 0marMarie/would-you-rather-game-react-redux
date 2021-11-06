@@ -19,17 +19,17 @@ const Navbar = (props) => {
         <div>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to='/' exact="true" className="nav-link" activeclassname='active'>
+              <NavLink to='/' exact="true" className="nav-link" activeClassName='active'>
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to='/add' className="nav-link" activeclassname='active'>
+              <NavLink to='/add' className="nav-link" activeClassName='active'>
                 New Question
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to='/leaderboard' className="nav-link" activeclassname='active'>
+              <NavLink to='/leaderboard' className="nav-link" activeClassName='active'>
                 Leader Board
               </NavLink>
             </li>
@@ -48,7 +48,7 @@ const Navbar = (props) => {
             }
             <li className="nav-item">
               <NavLink to='/login' className="nav-link"
-                       activeclassname='active' onClick={handleClick}>
+                       activeClassName='active' onClick={handleClick}>
                 Logout
               </NavLink>
             </li>

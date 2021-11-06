@@ -70,7 +70,7 @@ const NewQuestion = (props) => {
           <hr />
           <span className="text-muted">Or</span>
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <input type="text"
             className="form-control" placeholder="Enter Option Two Text Here"
             onChange={handleOptionTwo} />

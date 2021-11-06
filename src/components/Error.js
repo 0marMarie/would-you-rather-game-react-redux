@@ -4,7 +4,7 @@ const Error = () => {
       <div>
         <h1 className="display-1 text-danger text-center font-weight-bold">404!</h1>
       </div>
-      <div class="text-dark text-center" role="alert">
+      <div className="text-dark text-center" role="alert">
         Error, Page Not Found !!!!!
       </div>
     </div>
