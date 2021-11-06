@@ -34,10 +34,12 @@ const Navbar = (props) => {
               </NavLink>
             </li>
             {authedUser
-              ? (<li className="nav-item">
+              ? (<li className="nav-item" key={authedUser}>
                 <div className="nav-link">
                   <img className="" width="30" height="24" 
-                       className="d-inline-block" src={author.avatarURL} />
+                       className="d-inline-block" 
+                       alt={author.name}
+                       src={author.avatarURL} />
                   <span> </span>
                   <span className="text-muted h6">{author.name}</span>
                 </div>

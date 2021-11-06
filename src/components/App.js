@@ -47,9 +47,10 @@ const App = (props) => {
   )
 }
 
-const mapStateToProps = ({ users }) => (
+const mapStateToProps = ({ users, autrhedUser }) => (
   {
-    loading: users === null
+    loading: users === null,
+    autrhedUser
   }
 )
 

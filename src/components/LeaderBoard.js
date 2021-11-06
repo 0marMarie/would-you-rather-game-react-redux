@@ -4,14 +4,14 @@ import Ranking from './Ranking';
 
 const LeaderBoard = (props) => {
 
-  const { authedUser } = props;
+  const { authedUser, location } = props;
 
   // Checking if there is no user authenticated
   if (!authedUser) {
     return (
       <Redirect to={{
         pathname: '/login',
-        state: props.location
+        state: location
       }} />
     )
   }

@@ -11,11 +11,12 @@ function Result (props) {
   console.log(id, authedUser)
 
   // Checking the id and if there is an authenticated user already.
-  if (!authedUser)
-    return (<Redirect to='/login' />)
 
   if (!id)
     return (<Redirect to='/error' />)
+  
+  if (!authedUser)
+    return (<Redirect to='/login' />)
 
   // Get the sum of first option, second option and the Total Votes
   const optionOne = questions[id].optionOne
@@ -64,7 +65,7 @@ function Result (props) {
             </p>
             { answerText === optionOne.text
               ? <p className="p-2">
-                <img src="/answer.png" width="20" height="20" />
+                <img src="/answer.png" width="20" alt="answer" height="20" />
                 <span className="text-secondary"> your answer! </span>
               </p>
               : ''
@@ -90,7 +91,7 @@ function Result (props) {
             </p>
             {answerText === optionTwo.text
               ? <p className="p-2">
-                <img src="/answer.png" width="20" height="20" />
+                <img src="/answer.png" alt="answer" width="20" height="20" />
                 <span className="text-secondary"> your answer! </span>
               </p>
               : ''

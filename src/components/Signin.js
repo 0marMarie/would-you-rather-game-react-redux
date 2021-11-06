@@ -41,7 +41,7 @@ const Signin = (props) => {
       <hr />
       <form className="">
         <div className="text-center">
-          <img src='would_u_rather.png' width='300' height='200' />
+          <img src='would_u_rather.png' alt="wouldURatehr" width='300' height='200' />
         </div>
         <h3 className="text-success text-center signin mt-4">Sign in</h3>
         <select id="choose" className="form-select mt-3" onChange={handleChangeUser}>
