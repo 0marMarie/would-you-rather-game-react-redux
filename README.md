@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Installing the Project Command
+
+To install the project you just need to run `npm install` or `yarn install` 
+
+# Start the Project Command
+
+To launch the project on your local machine just run `npm start` or `yarn start`
+
 # Would You Rather Project
 
 This is the starter code for the final assessment project for Udacity's React & Redux course.
