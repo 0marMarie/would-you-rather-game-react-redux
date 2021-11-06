@@ -26,19 +26,11 @@ const Poll = (props) => {
     }))
   }
 
-
   // if the id does not exist, handle the err
-  if (!authedUser)
-    return (
-      <Redirect to={{
-        pathname: '/login',
-        state: location,
-      }} />
-    )
-    
   if (!id)
     return (<Redirect to={{
-      pathname: '/error'
+      pathname: '/error',
+      state: location,
     }} />)
 
   return (
