@@ -15,11 +15,11 @@ const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand navbar-light bg-white">
       <div className="container-fluid">
-        <a className="navbar-brand">Would You Rather</a>
+        <p className="navbar-brand">Would You Rather</p>
         <div>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to='/' exact="true" className="nav-link" activeClassName='active'>
+              <NavLink to='/' exact className="nav-link" activeClassName='active'>
                 Home
               </NavLink>
             </li>
@@ -36,7 +36,7 @@ const Navbar = (props) => {
             {authedUser
               ? (<li className="nav-item" key={authedUser}>
                 <div className="nav-link">
-                  <img className="" width="30" height="24" 
+                  <img width="30" height="24" 
                        className="d-inline-block" 
                        alt={author.name}
                        src={author.avatarURL} />

@@ -45,7 +45,7 @@ const Signin = (props) => {
         </div>
         <h3 className="text-success text-center signin mt-4">Sign in</h3>
         <select id="choose" className="form-select mt-3" onChange={handleChangeUser}>
-          <option value="" disabled selected hidden className="text-mueted">Select User</option>
+          <option value="" disabled hidden className="text-mueted">Select User</option>
           {users.map((user) => (
             <option value={user.id} key={user.id} >
               {user.name}

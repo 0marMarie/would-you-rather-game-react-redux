@@ -5,7 +5,7 @@ import Poll from './Poll'
 
 // This question separation solution has been inspired via google search #
 const Question = (props) => {
-  const { pollAnswered, questions_id, location, authedUser } = props
+  const { pollAnswered, questions_id, location } = props
 
   // Handle login if question id does not exist
   if (!questions_id) {
